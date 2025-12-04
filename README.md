@@ -12,13 +12,8 @@ This repository follows a modular and production-ready structure with components
 
 **model_trainer/** - Training and hyperparameter tuning with MLflow
 
-**model_pusher/** - Pushing trained models to AWS S3
-
 **batch_prediction/**- Inference pipeline for real-time or batch predictions
 
-**docker/** - Dockerfile and GitHub Actions for CI/CD
-
-**deployment/** - Scripts to deploy the model on AWS EC2 using Docker
 
 ## 🧪 Features
 **🔁 ETL Pipeline** built using Python and MongoDB Atlas
@@ -28,10 +23,6 @@ This repository follows a modular and production-ready structure with components
 **🤖 Model Training** using algorithms with hyperparameter tuning
 
 **📊 MLflow Experiment** Tracking (with Dagshub as remote store)
-
-**☁️ Model Hosting** on AWS S3 & Deployment on EC2 instance
-
-**🐳 Dockerized** with GitHub Actions for CI/CD
 
 **🛠️ Logging and Exception Handling** throughout the code
 
@@ -52,11 +43,8 @@ This repository follows a modular and production-ready structure with components
 
 8. Track Experiments using MLflow with Remote Dagshub
 
-9. Push Artifacts to AWS S3
+9. Create Batch Prediction Pipeline
 
-10. Create Batch Prediction Pipeline
-
-11. Build Docker Image & Deploy to AWS EC2 via GitHub Actions
 
 ## ⚙️ Tech Stack
 - Python
@@ -67,16 +55,11 @@ This repository follows a modular and production-ready structure with components
 
 - MLflow + Dagshub
 
-- Docker
-
-- AWS EC2, S3, ECR
-
-- GitHub Actions
 
 ## 🧰 Setup Instructions
 
 #### Clone the repo
-git clone https://github.com/Ammar-Vohra/network_security.git
+git clone https://github.com/MAAnwarS/CEP_Project.git
 cd network_security
 
 #### Create a virtual environment
@@ -90,17 +73,6 @@ pip install -r requirements.txt
 #### Run the pipeline (example command)
 python main.py
 
-
-## 📦 Deployment
-
-The project is containerized and deployed using AWS EC2. Follow these steps:
-
-1. Build Docker image:
-        docker build -t phishing-url-detector .
-
-2. Push to AWS ECR (via GitHub Actions)
-
-3. Deploy on EC2 using Docker Run
 
 ## 📊 MLflow UI (Local or Remote)
 mlflow ui
